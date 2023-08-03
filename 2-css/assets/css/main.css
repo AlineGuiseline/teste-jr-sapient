@@ -292,6 +292,59 @@
     border: 0.063rem solid #E1E1E1; /* 1px */
 }
 
+
+/* Responsividade: Notebook */
+
+@media (max-width: 1400px) {
+    #header {
+        width: 1310px; /* 820px */
+    }
+
+    .post {
+        margin-left: 60px;
+        width: 780px;
+    }
+
+    .main_title {
+        margin-top: 10px;
+    }
+
+    .links-container {
+        margin-top: 0px;
+        width: 800px;
+    }
+
+    .main {
+        margin-left: 17%;
+    }
+
+    .meta {
+        margin-left: 500px;
+        margin-top: 10px;
+    }
+
+    .image_featured {
+        width: 680px;
+    }
+
+    .second_paragraph {
+        width: 680px;
+    }
+
+    .actions_pagination {
+        margin-left: 0;
+    }
+
+    .posts-wrapper {
+        width: 400px;
+    }
+
+    .about_actions {
+        margin-left: 0;
+    }
+}
+
+
 /* Responsividade: iPad Air */
 
 @media (max-width: 850px) {
@@ -306,15 +359,15 @@
 
     .main_title {     
         border: none;
-        margin-top: 10px;
+        margin-top: 0.625rem; /* 10px */
+    }
+
+    .links-container {
+        width: 25rem; /* 400px */
     }
 
     .links_item {
         visibility: hidden;
-    }
-
-    .main {
-        margin-left: 0;
     }
 
     .header {
@@ -333,7 +386,7 @@
 
     .image_featured {
         width: 95%;
-        margin-left: 2%;
+        margin-left: 3%;
     }
 
     .actions {
@@ -346,7 +399,7 @@
     }
 
     .actions_pagination {
-        margin-left: 75px;
+        margin-left: 4.688rem; /* 75px */
         margin-bottom: 0;
     }
 
@@ -369,7 +422,7 @@
     }
 }
 
-/* Responsividade: iPad/ iPad Mini */
+/* Responsividade: iPad/ iPad Air/ iPad Mini */
 
 @media (max-width: 800px) {
     #header {
@@ -392,6 +445,11 @@
         margin-left: 0;
     }
 
+    .mini-post {
+        margin-left: 2.5rem; /* 40px */
+        gap: 1.875rem; /* 30px */
+    }
+
     .posts-wrapper {
         padding-left: 2.5rem; /* 40px */
     }
@@ -399,11 +457,15 @@
 
 @media (max-width: 400px) {
     #header {
-        width: 23.438rem; /* 375px */
+        width: 23.125rem; /* 370px */
+    }
+
+    .links-container {
+        width: 6.25rem; /* 100px */
     }
 
     .main {
-        margin-left: -50px;
+        margin-left: 0;
     }
 
     .paragraph {
@@ -448,8 +510,12 @@
     }
 
     .mini-posts {
-        width: 21.375rem;
+        width: 24.688rem; /* 395px */
         margin-right: 0;
+    }
+
+    .mini-post {
+        margin-right: 0px;
     }
 
     .blurb {
