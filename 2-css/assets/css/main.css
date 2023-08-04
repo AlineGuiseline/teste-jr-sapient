@@ -14,21 +14,16 @@
 
 #header {
   display: flex;
-
   width: 100%;
   height: 4rem; /* 64px */
-
   background: #FFFFFF;
   border: 0.063rem solid #EEEEEE; /* 1px */
 }
 
 .main_title {
-    margin-top: 1.438rem; /* 23px */
-    margin-left: 1.75rem; /* 28px */
-
+    margin: 1.438rem 0 0 1.75rem;
     padding-right: 1.813rem; /* 29px */
     border-right: 0.063rem solid #EEEEEE; /* 1px */
-
     font: bold 0.875rem/1.25rem Source Sans Pro; /* 14px/20px */
     letter-spacing: 0.175rem; /* 2.8px */
     color: #3C3B3B;
@@ -37,7 +32,6 @@
 
 .links {
     margin-top: 1.438rem; /* 23px */
-
     font: normal 0.875rem/1.25rem Source Sans Pro; /* 14px/20px */
     letter-spacing: 0.263rem;  /* 4.2px */
     color: #828282;
@@ -47,40 +41,26 @@
 .links_item {
     margin-left: 3rem; /* 48px */
     border-right: 0.063rem solid #EEEEEE; /* 1px */
-
-    
     padding-right: 1.313rem; /* 21px */
 }
 
 .main {
-    margin-top: 1.438rem; /* 23px */
-    margin-left: 45rem;
-
+    margin: 1.438rem 0 0 45rem;
     border: 0.063rem solid #EEEEEE; /* 1px */
-
-    padding-left: 1.313rem; /* 21px */
-    padding-right: 1.313rem; /* 21px */
-    padding-bottom: 1.313rem; /* 21px */
-
-    padding-top: 0.313rem; /* 21px */
+    padding: 0.313rem 1.313rem 1.313rem 1.313rem;
 }
 
 .post {
     background: #FFFFFF;
     border: 0.063rem solid #EEEEEE; /* 1px */
-
-    margin-bottom: 2.875rem; /* 46px */
-    margin-top: 2.875rem; /* 46px */
-
-    margin-left: 12.813rem;
+    margin: 2.875rem 0 2.875rem 12.813rem;
 }
 
 .header {
     background: #FFFFFF;
     border: 0.063rem solid #EEEEEE; /* 1px */
-    padding-top: 4.375rem; /* 70px */
-    padding-left: 3.5rem; /* 56px */
     margin-bottom: 3.75rem; /* 60px */
+    padding: 4.375rem 0 0 3.5rem;
 }
 
 .secondary_title {
@@ -103,9 +83,13 @@
     height: 5.063rem; /* 81px */
 
     margin-left: 43.75rem; /* 700px */
+    /*
     display: flex;
     justify-content: flex-start;
-    flex-direction: column;
+    flex-direction: column;*/
+    position: relative;
+    margin-bottom: 0.625rem; /* 10px */
+    margin-top: -3.125rem; /* -50px */
 }
 
 .published {
@@ -138,34 +122,27 @@
 .image_featured {
     display: flex;
     justify-content: center;
-    margin-left: 3.125rem; /* 50px */
-    margin-bottom: 3.75rem; /* 60px */
+    margin: 0 0 3.75rem 3.125rem;
 }
 
 .second_paragraph {
-    margin-left: 3.438rem; /* 55px */
-    margin-bottom: 3rem; /* 48px */
     width: 58.25rem; /* 932px */
-
     text-align: left;
     font: normal 1rem/1.875rem Source Sans Pro; /* 16px/30px */
     letter-spacing: 0.08rem; /* 1.28px */
     color: #3C3B3B;
+    margin: 0 0 3rem 3.438rem;
 }
 
 .actions, .disabled_button_large_previous, .button_large_next, .about_actions {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    margin-bottom: 3.563rem; /* 57px */
-    margin-left: 3.438rem; /* 55px */
-
+    margin: 0 0 3.563rem 3.438rem;
     width: 15.875rem; /* 254px */
     height: 3.875rem; /* 62px */
     background: #FFFFFF;
     border: 0.063rem solid #EEEEEE; /* 1px */
-
     font: bold 0.875rem/1.25rem Source Sans Pro; /* 14px/20px */
     letter-spacing: 0.245rem; /* 3.92px */
     color: #3C3B3B;
@@ -186,29 +163,28 @@
     display: flex;
     flex-wrap: wrap;
     width: 25.625rem; /* 410px */
-    
     margin-top: 2.875rem; /* 46px */
 }
 
-.mini-post {
-    margin-left: 3.625rem; /* 58px */
+.sidebar_avatar {
+    position: absolute;
+    margin: 0 0 6.25rem 15.625rem;
+}
 
+
+.mini-post {
+    margin: 0 0 2.5rem 3.625rem;
     display: flex;
     justify-content: flex-end;
     flex-direction: column-reverse;
-
     background: #FFFFFF;
     border: 0.063rem solid #EEEEEE; /* 1px */
-    margin-bottom: 2.5rem; /* 40px */
 }
 
 .sidebar_header {
     display: flex;
     flex-direction: column;
-
-    padding-left: 1.25rem; /* 20px */
-    padding-top: 0.625rem; /* 10px */
-
+    padding: 0.625rem 0 0 1.25rem;
     font: normal 600 0.875rem/1rem Source Sans Pro; /* 14px/16px*/
     letter-spacing: 0.245rem; /* 3.92px */
     color: #3C3B3B;
@@ -228,7 +204,6 @@
 
 .posts {
     margin-left: 3.625rem; /* 58px */
-
     display: flex;
     flex-wrap: wrap;
     width: 25.625rem; /* 410px */
@@ -236,9 +211,7 @@
 
 .posts-wrapper {
     border-bottom: 0.063rem dashed #DBDBDB; /* 1px */
-
-    padding-bottom: 2.063rem; /* 33px */
-    padding-top: 2.063rem; /* 33px */
+    padding: 2.063rem 0;
 }
 
 .posts_header {
@@ -246,14 +219,12 @@
     flex-wrap: wrap;
     height: 0.625rem; /* 10px */
     margin-left: 5.938rem; /* 95px */
-
     padding-top: 0.625rem; /* 10px */
 }
 
 .tertiary_title {
     width: 18.625rem; /* 298px */
     height: 2.5rem; /* 40px */
-
     font: bold 0.875rem/1.25rem Source Sans Pro; /* 14px/20px */
     letter-spacing: 0.21rem; /* 3.36px */
     color: #3C3B3B;
@@ -275,9 +246,7 @@
     left: 12.75rem; /* 204px */
     width: 24.125rem; /* 386px */
     height: 15.375rem; /* 246px */
-
-    margin-top: 40.5px; /* 40.5px */
-    margin-left: 58px; /* 58px */
+    margin: 40.5px 0 0 3.625rem;
 }
 
 .about_paragraph {
@@ -306,7 +275,7 @@
 
     .main_title {     
         border: none;
-        margin-top: 10px;
+        margin-top: 0.625rem; /* 10px */
     }
 
     .links_item {
@@ -322,8 +291,7 @@
     }
 
     .meta {
-        margin-left: 31.25rem; /* 500px */
-        margin-top: 2.313rem; /* 37px */
+        margin: 2.313rem 0 0 31.25rem;
     }
 
     .post {
@@ -346,8 +314,7 @@
     }
 
     .actions_pagination {
-        margin-left: 75px;
-        margin-bottom: 0;
+        margin: 0 0 0 4.688rem;
     }
 
     .posts-wrapper {
@@ -389,7 +356,7 @@
     .mini-posts, .posts {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin-left: 0;
+        margin-left: -1.25rem;
     }
 
     .posts-wrapper {
@@ -403,7 +370,7 @@
     }
 
     .main {
-        margin-left: -50px;
+        margin-left: -3.125rem; /* -50px */
     }
 
     .paragraph {
@@ -424,7 +391,7 @@
 
     .header {
         width: 23.438rem; /* 375px */
-        width: 375px;
+        /* width: 375px; */
         padding-left: 0;
         text-align: center;
     }
@@ -438,7 +405,7 @@
     }
 
     #sidebar {
-        margin-left: -30px;
+        margin-left: -1.875rem; /* -30px */
     }
 
     .actions_pagination, .mini-posts, .posts {
