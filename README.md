@@ -10,7 +10,7 @@ Este projeto é um teste técnico, dividido em 3 etapas:
   **3.1** abrir e fechar o menu com o clique no botão Menu  
   **3.2** play do vídeo ao clicar na imagem de capa  
   **3.3** sistema de sanfona para a lista  
-  **3.4** carregamento de conteúdo ajax pela api da [Wikipedia](https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=Alber%20Einstein)  
+  **3.4** carregamento de conteúdo ajax pela api da [CatFact](https://catfact.ninja/fact)  
   **3.5** abrir modal com foto e fazer função no botão de fechar 
 
 
@@ -20,7 +20,7 @@ Este projeto é um teste técnico, dividido em 3 etapas:
 
 ## Conhecimentos técnicos apresentados:
  ✅ HTML 5  
- ✅CSS 3  
+ ✅ CSS 3  
  ✅ Javascript (Vanilla JS)  
  ✅ Versionamento (Git)  
  ✅ Conhecimentos básicos de CLI  
