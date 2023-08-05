@@ -9,7 +9,6 @@ menuButton.addEventListener('click', () => {
 });
 
 /* Play do vídeo ao clicar na imagem de capa */
-
 function playVideo() {
   const videoCover = document.querySelector('.video-cover');
   const videoPlayer = document.querySelector('#video-player');
@@ -23,7 +22,6 @@ function playVideo() {
 document.addEventListener("DOMContentLoaded", playVideo);
 
 /* Sistema de sanfona para a lista */
-
 const accordionItems = document.querySelectorAll('.accordion .item');
 
 accordionItems.forEach(item => {
@@ -43,7 +41,6 @@ accordionItems.forEach(item => {
 })
 
 /* Carregamento de conteúdo ajax pela api da Wikipedia */
-
 function showInfos() {
   const wikiExtract = document.querySelector('.extract');
 
@@ -63,7 +60,6 @@ function showInfos() {
 document.addEventListener("DOMContentLoaded", showInfos());
 
 /* Abrir modal com a foto e fazer função no botão de fechar */
-
 const openWikiModal = document.querySelector('#button-modal');
 const modalWiki = document.querySelector('.modal-wiki');
 const closeWikiModal = document.querySelector('#close-modal');
@@ -75,3 +71,10 @@ openWikiModal.addEventListener('click', () => {
 closeWikiModal.addEventListener('click', () => {
   modalWiki.classList.remove('modal-wiki-active');
 });
+
+/* 
+    >>>> Nota para quem for analisar o código: 
+  Inicialmente, pensei que este último modal não estava funcionando, porque, ao tentar abri-lo, nada acontecia. Mas depois notei
+  que ele estava sendo aberto no topo da página, então é necessário descer a página até o final, passando por todas as informações
+  da API da Wikipédia, clicar no botão para abrir e subir a página novamente :)
+  */

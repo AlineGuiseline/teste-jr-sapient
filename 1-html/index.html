@@ -7,57 +7,53 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+
+    <!-- Cabeçalho -->
     <header>
         <div id="menu-icon">
-            <span class="material-symbols-outlined">
-                menu
-            </span>
+            <span class="material-symbols-outlined">menu</span>
         </div>
         <img src="./assets/img/imagem-2.png" alt="logo">
         <div id="search-icon">
-            <span class="material-symbols-outlined">
-                search
-            </span>
+            <span class="material-symbols-outlined">search</span>
         </div>
     </header>
 
+    <!-- Menu aberto -->
     <nav id="menu-area">
         <div class="close-icon">
-        <span class="material-symbols-outlined">
-            close
-        </span>
+        <span class="material-symbols-outlined">close</span>
         </div>
 
         <img src="./assets/img/imagem-2.png" alt="logo">
 
         <ul>
-            <li style="list-style: none"><b>Quem somos</b></li>
-            <li style="list-style: none"><b>Trabalhe conosco</b></li>
-            <li style="list-style: none"><b>Pessoas</b></li>
-            <li style="list-style: none"><b>Cases</b></li>
+            <li style="list-style: none"><b><a href="#quem-somos">Quem somos</a></b></li>
+            <li style="list-style: none"><b><a href="#trabalhe-conosco">Trabalhe conosco</a></b></li>
+            <li style="list-style: none"><b><a href="#pessoas">Pessoas</a></b></li>
+            <li style="list-style: none"><b><a href="#cases">Cases</a></b></li>
         </ul>
 
         <div id="social-medias">
-        <img src="./assets/img/instagram.svg" width="25" height="25">
-        <img src="./assets/img/facebook.svg" width="25" height="25">
-        <img src="./assets/img/linkedin.svg" width="25" height="25">
-        <img src="./assets/img/medium.svg" width="25" height="25">
+            <a href="#" aria-label="Instagram"><img src="./assets/img/instagram.svg" width="25" height="25" alt="Instagram"></a>
+            <a href="#" aria-label="Facebook"><img src="./assets/img/facebook.svg" width="25" height="25" alt="Facebook"></a>
+            <a href="#" aria-label="LinkedIn"><img src="./assets/img/linkedin.svg" width="25" height="25" alt="LinkedIn"></a>
+            <a href="#" aria-label="Medium"><img src="./assets/img/medium.svg" width="25" height="25" alt="Medium"></a>
         </div>
     </nav>
 
+    <!-- Área de busca -->
     <article class="search-area">
         <img src="./assets/img/imagem-2.png" alt="logo">
 
         <div class="close-icon">
-            <span class="material-symbols-outlined">
-                close
-            </span>
+            <span class="material-symbols-outlined">close</span>
         </div>
 
-        <input type="text" placeholder="Digite o que deseja buscar">
-
+        <input type="search" placeholder="Digite o que deseja buscar" aria-label="Campo de busca">
     </article>
     
+    <!-- Conteúdo principal -->
     <main>
         <h1>Olá mundo!</h1>
         <p>Lorem ipsum dolor sit amet, consectetuer
@@ -65,132 +61,137 @@
             nibh euismod tincidunt ut laoreet
             dolore magna aliquam erat volutpat. Ut
             wisi enim ad minim</p>
-        <video src="./assets/video/video.mp4" controls></video>
+        <video src="./assets/video/video.mp4" controls aria-label="Vídeo explicativo"></video>
         <blockquote>LOREM IPSUM DOLOR SIT AMET,
             CONSECTETUER VOLUTPAT. UT."</blockquote>
     </main>
     
+    <!-- Galeria de imagens -->
     <section>
         <h1>Galeria de imagens</h1>
         <div class="image-gallery">
-            <span class="material-symbols-outlined">
-                arrow_left
-            </span>
-            <img src="./assets/img/imagem-1.png" alt="img">
-            <span class="material-symbols-outlined">
-                arrow_right
-            </span>
+            <button aria-label="Imagem anterior">
+                <span class="material-symbols-outlined">arrow_left</span>
+            </button>
+
+            <img src="./assets/img/imagem-1.png" alt="imagem">
+
+            <button aria-label="Próxima imagem">
+                <span class="material-symbols-outlined">arrow_right</span>
+            </button>
         </div>
     
         <div class="input-area">
-            <input type="radio">
-            <input type="radio" checked="checked">
-            <input type="radio" checked="checked">
+            <input type="radio" name="image" id="image1" aria-label="Imagem 1">
+            <input type="radio" name="image" id="image2" aria-label="Imagem 2">
+            <input type="radio" name="image" id="image3" aria-label="Imagem 3">
         </div>
     </section>
     
+    <!-- Acordeão com informações extras -->
     <article id="know-more-area">
-        <details>
-            <summary>LOREM IPSUM DOLOR SIT</summary>
-            <p>Lorem ipsum dolor sit amet, consectetuer
-                erat volutpat. Ut wisi enim ad
-                minim</p>
-          </details>
-          <details>
-            <summary>LOREM IPSUM DOLOR SIT</summary>
-            <p>Lorem ipsum dolor sit amet, consectetuer
-                erat volutpat. Ut wisi enim ad
-                minim</p>
-          </details>
-          <details>
-            <summary>LOREM IPSUM DOLOR SIT</summary>
-            <p>Lorem ipsum dolor sit amet, consectetuer
-                erat volutpat. Ut wisi enim ad
-                minim</p>
-          </details>
-          <details>
-            <summary>LOREM IPSUM DOLOR SIT</summary>
-            <p>Lorem ipsum dolor sit amet, consectetuer
-                erat volutpat. Ut wisi enim ad
-                minim</p>
-          </details>
-          <details>
-            <summary>LOREM IPSUM DOLOR SIT</summary>
-            <p>Lorem ipsum dolor sit amet, consectetuer
-                erat volutpat. Ut wisi enim ad
-                minim</p>
-          </details>
+        <dl class="info-accordion">
+            <div class="item">
+                <!-- <div class="item -active"> -->
+                <dt class="title">LOREM IPSUM DOLOR SIT</dt>
+                <dd class="description">Lorem ipsum dolor sit amet, consectetur erat volutpat. Ut wisi enim ad minim</dd>
+            </div>
+
+            <div class="item">
+                <dt class="title">LOREM IPSUM DOLOR SIT</dt>
+                <dd class="description">Lorem ipsum dolor sit amet, consectetur erat volutpat. Ut wisi enim ad minim</dd>
+            </div>
+
+            <div class="item">
+                <dt class="title">LOREM IPSUM DOLOR SIT</dt>
+                <dd class="description">Lorem ipsum dolor sit amet, consectetur erat volutpat. Ut wisi enim ad minim</dd>
+            </div>
+
+            <div class="item">
+                <dt class="title">LOREM IPSUM DOLOR SIT</dt>
+                <dd class="description">Lorem ipsum dolor sit amet, consectetur erat volutpat. Ut wisi enim ad minim</dd>
+            </div>
+        </dl>
     </article>
     
+    <!-- Parceiros -->
     <section>
         <h1>Parceiros</h1>
         <div class="image-gallery">
-            <span class="material-symbols-outlined">
-                arrow_left
-            </span>
+
+            <button aria-label="Imagem anterior">
+                <span class="material-symbols-outlined">arrow_left</span>
+            </button>
+
             <img src="./assets/img/imagem-2.png" alt="img">
-            <span class="material-symbols-outlined">
-                arrow_right
-            </span>
+
+            <button aria-label="Próxima imagem">
+                <span class="material-symbols-outlined">arrow_right</span>
+            </button>
     
-            <div>
-            <p>Lorem ipsum dolor sit amet, consectetuer
-            adipiscing elit, sed diam
-            <br>
-            <a href="#">Conheça mais</a>
-            </p>
-        </div>
+            <div class="explanatory-text">
+                <p>Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit, sed diam
+                <br>
+                <a href="#">Conheça mais</a>
+                </p>
+            </div>
     
-        <div class="input-area">
-            <input type="radio">
-            <input type="radio" checked="checked">
-            <input type="radio" checked="checked">
-            <input type="radio" checked="checked">
+        <div class="input-area" aria-label="Seleção de parceiro">
+            <input type="radio" name="partner" id="partner1" aria-label="Parceiro 1">
+            <input type="radio" name="partner" id="partner2" aria-label="Parceiro 2">
+            <input type="radio" name="partner" id="partner3" aria-label="Parceiro 3">
         </div>
     
         </div>
     </section>
     
+    <!-- Área de contato -->
     <h1>Entre em contato</h1>
     
     <form id="form-fields">
         <div id="name-area">
-        <label>Nome:</label>
-        <br>
-        <input type="text">
+            <label>Nome:</label>
+            <br>
+            <input type="text" id="name" required>
         </div>
     
         <div id="email-area">
-        <label>E-mail:</label>
-        <br>
-        <input type="email">
+            <label>E-mail:</label>
+            <br>
+            <input type="email" id="email" required>
         </div>
     
         <div id="phone-area">
-        <label>Telefone:</label>
-        <br>
-        <input type="number">
+            <label>Telefone:</label>
+            <br>
+            <input type="number" id="phone" required>
         </div>
     
         <div id="message-area">
-        <label>Mensagem:</label>
-        <br>
-        <textarea></textarea>
-    </div>
+            <label>Mensagem:</label>
+            <br>
+            <textarea id="message" required></textarea>
+        </div>
     
-    <button>ENVIAR</button>
+        <button>ENVIAR</button>
     </form>
     
+    <!-- Endereço, telefone e links extras -->
     <footer>
         <p>
             Av. Dr. Figueiredo Mascarenhas, 94<br>
             Tres Vendas, Pelotas - RS<br>
             96055-510<br>
-            (53) 3030-3030
+            <a href="tel:+555330303030">(53) 3030-3030</a>
         </p>
     
         <nav>
-            <a href="#">Vagas</a> <a href="#">Cases</a> <a href="#">Sitemap</a>
+            <ul>
+                <li style="list-style: none"><a href="#">Vagas</a></li>
+                <li style="list-style: none"><a href="#">Cases</a></li>
+                <li style="list-style: none"><a href="#">Sitemap</a></li>
+            </ul>
         </nav>
     </footer>
 </body>
