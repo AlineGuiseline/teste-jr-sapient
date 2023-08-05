@@ -8,7 +8,9 @@ menuButton.addEventListener('click', () => {
   menu.classList.toggle('-active');
 });
 
-/* Play do vídeo ao clicar na imagem de capa */
+/* Play do vídeo ao clicar na imagem de capa 
+  >>> PS: Observei que esta interação funciona somente no navegador Mozilla Firefox, mas não consigo entender o motivo
+*/
 function playVideo() {
   const videoCover = document.querySelector('.video-cover');
   const videoPlayer = document.querySelector('#video-player');
@@ -19,7 +21,7 @@ function playVideo() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", playVideo);
+document.addEventListener("DOMContentLoaded", playVideo());
 
 /* Sistema de sanfona para a lista */
 const accordionItems = document.querySelectorAll('.accordion .item');
@@ -40,24 +42,25 @@ accordionItems.forEach(item => {
   })
 })
 
-/* Carregamento de conteúdo ajax pela api da Wikipedia */
-function showInfos() {
+/* Carregamento de conteúdo ajax pela api da CatFact */
+function showCatFact() {
   const wikiExtract = document.querySelector('.extract');
 
-  const url = 'https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=Alber%20Einstein';
+  const url = 'https://catfact.ninja/fact';
 
   fetch(url)
     .then(response => response.json())
     .then(data => {
-      const extract = data.query.pages[736].extract;
-      wikiExtract.innerHTML = extract;
+      const catFact = data.fact;
+      wikiExtract.innerHTML = catFact;
     })
     .catch(error => {
-      console.error('Erro ao obter informações da Wikipedia:', error);
+      console.error('Erro ao obter informações da CatFact:', error);
     });
 }
 
-document.addEventListener("DOMContentLoaded", showInfos());
+document.addEventListener("DOMContentLoaded", showCatFact());
+
 
 /* Abrir modal com a foto e fazer função no botão de fechar */
 const openWikiModal = document.querySelector('#button-modal');
@@ -71,10 +74,3 @@ openWikiModal.addEventListener('click', () => {
 closeWikiModal.addEventListener('click', () => {
   modalWiki.classList.remove('modal-wiki-active');
 });
-
-/* 
-    >>>> Nota para quem for analisar o código: 
-  Inicialmente, pensei que este último modal não estava funcionando, porque, ao tentar abri-lo, nada acontecia. Mas depois notei
-  que ele estava sendo aberto no topo da página, então é necessário descer a página até o final, passando por todas as informações
-  da API da Wikipédia, clicar no botão para abrir e subir a página novamente :)
-  */
