@@ -11,17 +11,14 @@ menuButton.addEventListener('click', () => {
 /* Play do vídeo ao clicar na imagem de capa 
   >>> PS: Observei que esta interação funciona somente no navegador Mozilla Firefox, mas não consigo entender o motivo
 */
-function playVideo() {
-  const videoCover = document.querySelector('.video-cover');
-  const videoPlayer = document.querySelector('#video-player');
 
-  videoCover.addEventListener('click', () => {
-    videoCover.classList.toggle('-inactive');
-    videoPlayer.play();
-  });
-}
+const videoCover = document.querySelector('.video-cover');
+const videoPlayer = document.querySelector('#video-player');
 
-document.addEventListener("DOMContentLoaded", playVideo());
+videoCover.addEventListener('click', () => {
+  videoCover.classList.toggle('-inactive');
+  videoPlayer.play();
+})
 
 /* Sistema de sanfona para a lista */
 const accordionItems = document.querySelectorAll('.accordion .item');
