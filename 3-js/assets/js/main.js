@@ -10,14 +10,17 @@ menuButton.addEventListener('click', () => {
 
 /* Play do vídeo ao clicar na imagem de capa */
 
-const videoCover = document.querySelector('.video-cover');
-const videoPlayer = document.querySelector('#video-player');
+function playVideo() {
+  const videoCover = document.querySelector('.video-cover');
+  const videoPlayer = document.querySelector('#video-player');
 
-videoCover.addEventListener('click', () => {
-  videoCover.classList.toggle('-inactive');
-  videoPlayer.play();
-});
+  videoCover.addEventListener('click', () => {
+    videoCover.classList.toggle('-inactive');
+    videoPlayer.play();
+  });
+}
 
+document.addEventListener("DOMContentLoaded", playVideo);
 
 /* Sistema de sanfona para a lista */
 
@@ -50,7 +53,6 @@ function showInfos() {
     .then(response => response.json())
     .then(data => {
       const extract = data.query.pages[736].extract;
-
       wikiExtract.innerHTML = extract;
     })
     .catch(error => {
@@ -58,7 +60,7 @@ function showInfos() {
     });
 }
 
-showInfos()
+document.addEventListener("DOMContentLoaded", showInfos());
 
 /* Abrir modal com a foto e fazer função no botão de fechar */
 
