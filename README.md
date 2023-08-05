@@ -1,31 +1,28 @@
 # Front-end Junior
 
-## Como fazer o teste?
+## Sobre o projeto
 
-  * Clone o projeto na sua máquina
-  * Siga as instruções do **README.md** contido em cada uma das pastas
-  * Crie o projeto em um respositório pessoal
-  * Mude o remote do repositório clonado para o seu repositório pessoal
-  * Envie o link do seu respositório para a pessoa que lhe enviou o teste
+Este projeto é um teste técnico, dividido em 3 etapas:
 
-> Faça tudo com calma e carinho que vamos olhar desta forma na hora de analisar o seu teste, e boa sorte <3
+  1. **HTML**: criação de uma página simples em HTML, seguindo um wireframe pré-estabelecido, enfatizando o HTML semântico;  
+  2. **CSS**: criação de estilo para uma página HTML, seguindo um design pré-estabelecido, aplicando responsividade tablets (iPad, iPad Air, iPad Mini) e dispoitivos móveis (iPhone 6/7/8) -- extra: foi adicionada responsividade para Notebook;  
+  3. **JavaScript:** adição de elementos interativos a uma página já pronta, sendo eles:  
+  **3.1** abrir e fechar o menu com o clique no botão Menu  
+  **3.2** play do vídeo ao clicar na imagem de capa  
+  **3.3** sistema de sanfona para a lista  
+  **3.4** carregamento de conteúdo ajax pela api da [Wikipedia](https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=Alber%20Einstein)  
+  **3.5** abrir modal com foto e fazer função no botão de fechar 
 
+
+> Observação: as partes do código escritas por mim estão com alguns comentários para melhor entendimento do avaliador :)
 
 - - - - -
 
-## Conhecimentos técnicos esperados:
- 1. HTML 5
- 2. CSS 3
- 3. Javascript - Vanilla JS e jQuery
- 4. Versionamento - Git
-
-## Conhecimentos técnicos desejados:
- 1. Conhecimentos básicos de CLI (MacOS)
- 2. Boas práticas em sites responsivos
-
-## Áreas de atuação na empresa:
- 1. Desenvolvimento de e-mail marketting
- 2. Criação de landing pages estáticas e com integrações de API
- 3. Auxílio na manutenção de sites e portais
- 4. Colaboração no desenvolvimento de projetos internos
- 5. Atualização e manutenção de CMS
+## Conhecimentos técnicos apresentados:
+ ✅ HTML 5  
+ ✅CSS 3  
+ ✅ Javascript (Vanilla JS)  
+ ✅ Versionamento (Git)  
+ ✅ Conhecimentos básicos de CLI  
+ ✅ Boas práticas em sites responsivos  
+ ✅ Conventional Commits Pattern  

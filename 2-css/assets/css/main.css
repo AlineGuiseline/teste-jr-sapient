@@ -268,7 +268,7 @@
 
 @media (max-width: 1400px) {
     #header {
-        width: 1310px; /* 820px */
+        width: 1310px;
     }
 
     .post {
@@ -336,7 +336,7 @@
     }
 
     .links-container {
-        width: 25rem; /* 400px */
+        width: 25rem;
     }
 
     .header {
